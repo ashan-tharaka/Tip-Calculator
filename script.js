@@ -13,9 +13,13 @@ function cal() {
         );
 
         var tipamount = (bill.value * tip.value) / 100;
+  if (isNaN(total) || isNaN(tipamount)) {
+            alert("Please enter valid information");
+        } else {
 
         tipa.value = tipamount;
         tot.value = total;
+}
     } else {
         alert("please fill required fields");
     }
